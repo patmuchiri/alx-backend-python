@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+"""
+This module provides a function to concatenate two strings.
+
+It includes a function named 'concat' that takes two strings as input
+and returns their concatenation.
+"""
+
+
 def add(a: float, b: float) -> float:
     """
     Adds two floating-point numbers and returns the result.
