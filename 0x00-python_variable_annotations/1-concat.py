@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+
+"""
+This module provides a function to perform basic arithmetic operations.
+Specifically, it includes a function to add two floating-point numbers
+and return their sum.
+"""
+
+
 def concat(str1: str, str2: str) -> str:
     """
     Concatenates two strings and returns the result.
