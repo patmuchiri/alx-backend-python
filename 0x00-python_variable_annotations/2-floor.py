@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Provides a function to compute the floor of a floating-point number.
+
+It includes a function named 'floor' that takes a float as input and
+returns the largest integer less than or equal to that float.
+"""
 import math
 
 
