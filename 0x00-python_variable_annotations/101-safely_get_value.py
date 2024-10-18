@@ -1,45 +1,42 @@
 #!/usr/bin/env python3
 
+"""
+This module defines a function for safely retrieving values from a dictionary
+based on a given key, with an optional default value.
+"""
+
 from typing import Mapping, TypeVar, Any, Union
 
 # Define a generic type variable 'T'
 T = TypeVar('T')
 
-"""
-This module provides a function for safely retrieving values from a dictionary.
-
-It includes:
-- safely_get_value: A function to get a value from a dictionary with a default
-fallback.
-"""
-
 
 def safely_get_value(
-    dct: Mapping, key: Any, default: Union[T, None] = None
+    dct: Mapping[Any, T],
+    key: Any,
+    default: Union[T, None] = None
 ) -> Union[Any, T]:
     """
-    Safely retrieves a value from a dictionary based on the key,
-    with a fallback to a default value.
+    Safely retrieves a value from a dictionary based on the key, with a fallback to a default value.
 
     Parameters:
     ----------
     dct : Mapping
-        The dictionary containing keys and values. The keys can be of any
-        type, and the values are of type 'T'.
-
+        The dictionary containing keys and values. The keys can be of any type,
+        and the values are of type 'T'.
+    
     key : Any
         The key used to retrieve the value from the dictionary.
-
+    
     default : Union[T, None], optional
-        The default value to return if the key does not exist in the
-        dictionary
+        The default value to return if the key does not exist in the dictionary.
         Defaults to None.
 
     Returns:
     -------
     Union[Any, T]
-        The value from the dictionary corresponding to the given key,
-        or the default value if the key is not found.
+        The value from the dictionary corresponding to the given key, or the default
+        value if the key is not found.
     """
     if key in dct:
         return dct[key]
