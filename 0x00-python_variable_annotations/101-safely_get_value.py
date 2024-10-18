@@ -1,4 +1,4 @@
-#!/usr/bin/env python 3
+#!/usr/bin/env python3
 from typing import Mapping, TypeVar, Any, Union
 
 # Define a type variable that can be any type
