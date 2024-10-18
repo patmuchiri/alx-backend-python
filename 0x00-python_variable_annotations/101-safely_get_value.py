@@ -5,6 +5,14 @@ from typing import Mapping, TypeVar, Any, Union
 # Define a generic type variable 'T'
 T = TypeVar('T')
 
+"""
+This module provides a function for safely retrieving values from a dictionary.
+
+It includes:
+- safely_get_value: A function to get a value from a dictionary with a default
+fallback.
+"""
+
 
 def safely_get_value(
     dct: Mapping, key: Any, default: Union[T, None] = None
@@ -23,7 +31,8 @@ def safely_get_value(
         The key used to retrieve the value from the dictionary.
 
     default : Union[T, None], optional
-        The default value to return if the key does not exist in the dictionary
+        The default value to return if the key does not exist in the
+        dictionary
         Defaults to None.
 
     Returns:
